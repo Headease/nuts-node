@@ -16,10 +16,9 @@
  *
  */
 
-package iam
+package v1
 
-// authzResponse is the response to an Authorization Code flow request.
-type authzResponse struct {
-	// html is the HTML page to be rendered to the user.
-	html []byte
-}
+import "github.com/nuts-foundation/go-did/vc"
+
+// VerifiablePresentation is a type alias for the VerifiablePresentation from the go-did library.
+type VerifiablePresentation = vc.VerifiablePresentation
